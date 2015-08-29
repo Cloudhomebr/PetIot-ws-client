@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PetIOT - Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+
+		<link rel="icon" type="image/ico" href="images/favicon.ico" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap-checkbox.css">
+		<link rel="stylesheet" href="js/plugins/superbox/css/style.css">
+		<link rel="stylesheet" href="js/plugins/colorbox/css/colorbox.css">
+
+		<link href="css/minoral.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="js/industrial-js-1.0.2/css/industrial.css">
+		<link rel="stylesheet" href="js/industrial-js-1.0.2/css/introjs.min.css">
+		<link rel="stylesheet" href="js/industrial-js-1.0.2/css/foundation.css">
+		<link rel="stylesheet" href="js/sweetalert-master/dist/sweetalert.css">
+		<link rel="stylesheet" href="css/bubble.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="brownish-scheme">
+
+		<!-- Preloader -->
+		<div class="mask"><div id="loader"></div></div>
+		<!--/Preloader -->
+
+		<!-- Wrap all page content here -->
+		<div id="wrap">
+			<!-- Make page fluid -->
+			<div class="row">
+				<!-- Main page content -->
+				<div id="content" class="col-md-12" style="padding: 0 !important;">
+					
+					<!-- breadcrumbs -->
+					<div class="breadcrumbs">
+						<ol class="breadcrumb">
+							<li><i class="fa fa-home"></i> PetIOT</li>
+							<li class="active">Dashboard</li>
+						</ol>
+					</div>
+					<!-- /breadcrumbs -->
+
+
+					<!-- TÍTULOS -->
+					<div class="row">
+						<div class="col-md-4" style="margin: 2%;">
+							<h3>Nível de comida</h3>
+							<h3 id="foodLevel" style="text-align: center;">0%</h3>
+						</div>
+
+						<div class="col-md-4" style="margin: 2%;">
+							<h3>Temperatura</h3>
+							<h3 id="foodLevel" style="text-align: center;">0%</h3>
+						</div>
+					</div>
+
+					<!-- MOSTRADORES -->
+					<div class="row" style="padding: 2%;">
+						<div class="col-md-4">
+							<div class="industrial tank size two" id="tankFood">
+								<span class="ticks" data-amount="4" data-scale-freq="1"></span>
+								<div class="space"></div>
+								<div class="meter"></div>
+							</div>
+						</div>
+
+						<div class="col-md-4" id="bubble_wrapper">
+							<div class="green">
+								<div class="progress">
+									<div class="inner">
+										<div class="percent"><span>0</span>%</div>
+										<div class="water"></div>
+										<div class="glare"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<button id="btnComida" name="btnComida" type="button" class="btn btn-primary btn-lg margin-bottom-20">Liberar comida</button>
+							<br>
+							<button id="btnAudio" name="btnAudio" type="button" class="btn btn-primary btn-lg margin-bottom-20">Tocar audio</button>
+                                                        <br>
+							<button id="btnVerificarTemp" name="btnVerificarTemp" type="button" class="btn btn-primary btn-lg margin-bottom-20">Ver Temperatura</button>
+                                                        <br>
+							<button id="btnVerificarReserv" name="btnVerificarReserv" type="button" class="btn btn-primary btn-lg margin-bottom-20">Ver Reservatorio</button>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&amp;skin=sons-of-obsidian"></script>
+		<script src="js/plugins/jquery.nicescroll.min.js"></script>
+		<script src="js/plugins/blockui/jquery.blockUI.js"></script>
+
+		<script src="js/plugins/superbox/superbox.js"></script>
+
+		<script src="js/plugins/colorbox/jquery.colorbox-min.js"></script>
+
+		<script src="js/minoral.min.js"></script>
+
+		<script src="js/industrial-js-1.0.2/js/industrial.js"></script>
+		<!-- <script src="js/industrial-js-1.0.2/js/app.js"></script> -->
+		<script src="js/industrial-js-1.0.2/js/intro.min.js"></script>
+
+		<script src="js/sweetalert-master/dist/sweetalert.min.js"></script>
+		
+		<script src="js/global.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
